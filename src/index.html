@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>输入整形</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script src="https://cdn.staticfile.org/vue/3.2.36/vue.global.min.js"></script>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div id="vue" class="demo">
+        <h1>一般运动</h1>
+        <div>
+            <canvas id="canvas1" width="1000" height="280">抱歉,您的浏览器不支持canvas元素</canvas>
+        </div>
+        <div>
+            <button @click="run01">启动</button>
+        </div>
+        <h1>输入整形运动</h1>
+        <div>
+            <canvas id="canvas2" width="1000" height="280">抱歉,您的浏览器不支持canvas元素</canvas>
+        </div>
+        <div>
+            <button @click="run02">启动</button>
+        </div>
+    </div>
+
+
+    <script>
+        Vue.createApp(VueApp).mount('#vue')
+    </script>
+</body>
+
+</html>
